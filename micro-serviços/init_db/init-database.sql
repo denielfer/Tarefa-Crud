@@ -8,5 +8,6 @@ CREATE TABLE IF NOT EXISTS `mysqldb`.`tarefa` (
   `descricao` TEXT NOT NULL
 );
 
-GRANT ALL PRIVILEGES ON `mysql`.* TO 'back_user'@'localhost' WITH GRANT OPTION;
+CREATE USER 'back_user'@'localhost' IDENTIFIED BY 'oidshnope1nop2n1op3no1p';
+GRANT ALL PRIVILEGES ON `mysql`.* TO 'back_user'@'localhost';
 FLUSH PRIVILEGES;

@@ -1,11 +1,4 @@
-version: '1'
-
-networks:
-  
-  # tarefa:
-  #   external: true
-
-  tarefa_internal:
+version: '2'
 
 services:
   mysqldb:
@@ -22,7 +15,7 @@ services:
     networks:
       - tarefa_internal
     volumes:
-      - my_db:/var/lib/mysql
+    #   - my_db:/var/lib/mysql
       - ./init_db:/docker-entrypoint-initdb.d
 
   backend:
@@ -41,31 +34,34 @@ services:
       - TIMEZONE=${TIMEZONE}
       - FRONTEND_URL=${FRONTEND_URL}
     ports:
-      - "${BACK_PORT}:${BACK_PORT}"
+      - ${BACK_PORT}:${BACK_PORT}
     networks:
       - tarefa_internal
-      # - tarefa
+      - tarefa
     links:
       - mysqldb
 
-  # frontend:
-  #   container_name: frontend
-  #   image: "codetta/ggadmin-frontend"
-  #   depends_on:
-  #     - backend
-  #   build:
-  #     context: ./frontend
-  #   ports:
-  #     - 3000:3000
-  #   volumes:
-  #     - /app/node_modules
-  #     - ./frontend:/app
-  #   environment:
-  #     - NODE_ENV=development
-  #     - CHOKIDAR_USEPOLLING=true
-  #   networks:
-  #     - tarefa_internal
-  #     - tarefa
+  frontend:
+    container_name: frontend
+    depends_on:
+      - backend
+    build:
+      context: ./frontend
+    ports:
+      - ${FRONT_PORT}:${FRONT_PORT}
+    volumes:
+      - /app/node_modules
+      - ./frontend:/app
+    environment:
+      - NODE_ENV=development
+      - CHOKIDAR_USEPOLLING=true
+    networks:
+      - tarefa
 
-volumes:
-  my_db:
+# volumes:
+#   my_db:
+
+networks:
+  tarefa:
+    external: true
+  tarefa_internal:

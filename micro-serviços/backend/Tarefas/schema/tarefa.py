@@ -17,3 +17,12 @@ class put_post_tarefa_schema(BaseModel):
     descricao:str
     data:date
     status:str
+
+class compact_tarefa_schema(BaseModel):
+    id:int
+    titulo:str
+    data:date
+    status:str
+    
+class slice_tarefas_schema(BaseModel):
+    tarefas:List[compact_tarefa_schema]
