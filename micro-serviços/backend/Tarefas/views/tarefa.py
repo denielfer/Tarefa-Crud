@@ -142,7 +142,6 @@ async def create_tarefa(rbody: Schema.put_post_tarefa_schema):
         session.close()
     return {"msg":"Tarefa criada com sucesso"}
 
-# fazer UPDATE
 @router.put(
     path='/tarefa/{id}',
 )
