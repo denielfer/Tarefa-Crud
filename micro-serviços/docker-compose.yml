@@ -25,7 +25,6 @@ services:
       - mysqldb
     build:
       context: ./backend
-    image: "python"
     environment:
       - MYSQL_SERVER=${MYSQL_SERVER}
       - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
@@ -41,6 +40,8 @@ services:
       - tarefa
     links:
       - mysqldb
+    volumes:
+      - ./backend:/app
 
   frontend:
     container_name: frontend
