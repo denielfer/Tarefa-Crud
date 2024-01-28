@@ -20,9 +20,10 @@ Com o docker é necessário inicialmente criar a rede externa a primeira vez ass
     docker network create tarefa
 ```
 Para criar a rede externa que será usada pelo FrontEnd e Backend.
+
 Então podemos subir as máquinas no docker, na pasta micro-serviços:
 ```powershell
-    docker docker-compose up
+    docker-compose up
 ```
 Ao executar esse comando as máquinas serão iniciadas, porém ocorrerá um problema com o Backend, o qual tentará se conectar ao Banco de Dados, porém este demora um pouco mais a iniciar assim haverá falha na sua inicialização, sendo necessário reiniciá-lo. Note que este problema só acontece quando inicializamos o Banco de dados e o BackEnd “ao mesmo tempo".
 
