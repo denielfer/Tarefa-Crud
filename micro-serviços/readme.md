@@ -117,7 +117,9 @@ Assim ao clicarmos em um item temos:
 Aqui temos a expansão de 1 card que traz:
 
 1 - Card onde mostra o comentário
+
 2 - Botão para editar tarefa
+
 3 - Botão para deletar tarefa
 
 
