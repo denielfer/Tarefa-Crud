@@ -3,11 +3,11 @@ Esta solução é feita em monolito, usando o Framework Django, com a database p
 
 ## Tecnologias
  - [Python](https://www.python.org/downloads/): 3.10.4 
- - Django: 5.0.1
- - SQLite: 3
+ - [Django](https://www.djangoproject.com/) : 5.0.1
+ - [SQLite](https://www.sqlite.org/index.html): 3 
 
 ## Como inicializar
-Dentro do repositorio django-monolito, é nessessario instalar as dependendencias:
+Dentro do repositório django-monolito, é necessário instalar as dependências:
 
 ```powershell
    pip install -r requirements.txt 
@@ -16,29 +16,29 @@ e por fim para iniciar o servidor:
 ```powershell
    python .\UnMEP\manage.py runserver 
 ```
-O projeto sera executado no local host na porta 8000, portanto acessamos pelo link:
+O projeto será executado no local host na porta 8000, portanto acessamos pelo link:
 http://127.0.0.1:8000/tarefas/
 
 ## Como usar
-Na imagem abaixo temos pagina principal, onde todas as operações podem ser feitas.
+Na imagem abaixo temos a página principal, onde todas as operações podem ser feitas.
 
 ![Alt Text](img/pagina_inicial.png)
 
-Nesta pagina temos 4 elementos:
+Nesta página temos 4 elementos:
 
 1 - Lista de tarefas cadastradas
-2 - botão para editar tarefa
-3 - botão para deletar tarefa
-4 - formulario de adição/edição de tarefa
+2 - Botão para editar tarefa
+3 - Botão para deletar tarefa
+4 - Formulário de adição/edição de tarefa
 
 
 ### Adição
 
-Para adicionar uma tarefa é nescessario digitar o titulo, data e descrição desta tarefa, e selecionar o estados, por fim clicando em salvar
+Para adicionar uma tarefa é necessário digitar o título, data e descrição desta tarefa, e selecionar o estados, por fim clicando em salvar
 
 ### Visualizar
 
-As tarefas tem suas informações apresentadas na lista de tarefaz, com exceção da descrição, que para ser visualizada é nescessario clicar em editar e este sera carregado no campo de descrição
+As tarefas têm suas informações apresentadas na lista de tarefas, com exceção da descrição, que para ser visualizada é necessário clicar em editar e este será carregado no campo de descrição
 
 ### Editar
 
@@ -46,17 +46,17 @@ Clique no botão ‘Editar’ da tarefa desejada. As informações da tarefa ser
 
 ### Deletar
 
-Para deletar uma tarefa clica-se no botão deletar do formulario.
+Para deletar uma tarefa clica-se no botão deletar do formulário.
 
 
-## Comentarios
-Nesta solução não existe uma API pronta para ser disponibilisada a um cliente ou integrada a um serviço diretamente, uma vez que o CSRF (Cross-Site Request Forgery) esta ativo, para este poder ser disponibilisado seria nescessario remover o CSRF destas rotas e trona as respsotas um json, uma vez que a resposta esta sendo uma pagina web.
+## Comentários
+Nesta solução não existe uma API pronta para ser disponibilizada a um cliente ou integrada a um serviço diretamente, uma vez que o CSRF (Cross-Site Request Forgery) está ativo, para este poder ser disponibilizado seria necessário remover o CSRF destas rotas e torna as respostas um json, uma vez que a resposta está sendo uma página web.
 
-Essa solução foi feita para mostra a possibilidade de um monolito que possa ser melhorado futuramente, apresentando assim uma solução nesta arquitetura.
+Essa solução foi feita para mostrar a possibilidade de um monolito que possa ser melhorado futuramente, apresentando assim uma solução nesta arquitetura.
 
-Uma outra melhoria seria desacoplar o banco da maquina fazendo integração com um externo, uma vez que esta solução usa o SQLite criado automatico pelo DJango.
+Uma outra melhoria seria desacoplar o banco da máquina fazendo integração com um externo, uma vez que esta solução usa o SQLite criado automático pelo Django.
 
 ### Arquitetura:
-Nesta aquitetura temos em uma maquina toda a aplicação, em um cenario real seria recomendado colocar o Banco de Dados em um servidor a parte e de preferencia com uma rede isolada para comunicação do BackEnd com o banco.
+Nesta arquitetura temos em uma máquina toda a aplicação.
 
 ![Alt Text](img/arquitetura.png)
