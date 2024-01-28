@@ -12,6 +12,10 @@ Dentro do repositório django-monolito, é necessário instalar as dependências
 ```powershell
    pip install -r requirements.txt 
 ```
+Como o banco de dados não vem atualizado do git, precisamos executar as alterações no banco, usando:
+```powershell
+   python .\UnMEP\manage.py migrate 
+```
 e por fim para iniciar o servidor:
 ```powershell
    python .\UnMEP\manage.py runserver 
