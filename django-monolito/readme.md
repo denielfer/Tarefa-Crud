@@ -7,8 +7,7 @@ Esta solução é feita em monolito, usando o Framework Django, com a database p
  - [SQLite](https://www.sqlite.org/index.html): 3 
 
 ## Como inicializar
-Dentro do repositório django-monolito, é necessário instalar as dependências:
-
+Dentro do repositório django-monolito, é necessário instalar as dependências ( de preferência em um ambiente virtual ):
 ```powershell
    pip install -r requirements.txt 
 ```
