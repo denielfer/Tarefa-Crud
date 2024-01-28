@@ -2,7 +2,7 @@
 Esta solução é feita em monolito, usando o Framework Django, com a database padrão de SQLite. 
 
 ## Tecnologias
- - Python: 3.10.4
+ - [Python](https://www.python.org/downloads/): 3.10.4 
  - Django: 5.0.1
 
 ## Como inicializar
