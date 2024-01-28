@@ -103,8 +103,11 @@ Nesta primeira imagem temos a pagina inicial do FrontEnd.
 Nesta página temos 4 elementos:
 
 1 - Botão comum a todas as páginas para ir à página inicial
+
 2 - Lista de tarefas cadastradas
+
 3 - Botão para adicionar uma nova tarefa
+
 4 - Cada item da lista de tarefas pode ser clicado para expandir e mostra a descrição
 
 Assim ao clicarmos em um item temos:
