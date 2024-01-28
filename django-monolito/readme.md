@@ -30,8 +30,11 @@ Na imagem abaixo temos a página principal, onde todas as operações podem ser 
 Nesta página temos 4 elementos:
 
 1 - Lista de tarefas cadastradas
+
 2 - Botão para editar tarefa
+
 3 - Botão para deletar tarefa
+
 4 - Formulário de adição/edição de tarefa
 
 
