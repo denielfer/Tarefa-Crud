@@ -26,6 +26,10 @@ Então podemos subir as máquinas no docker, na pasta micro-serviços:
     docker-compose up
 ```
 Ao executar esse comando as máquinas serão iniciadas, porém ocorrerá um problema com o Backend, o qual tentará se conectar ao Banco de Dados, porém este demora um pouco mais a iniciar assim haverá falha na sua inicialização, sendo necessário reiniciá-lo. Note que este problema só acontece quando inicializamos o Banco de dados e o BackEnd “ao mesmo tempo".
+Para isso, após o banco de dados estar funcional, executamos o seguinte comando em outro terminal:
+```powershell
+    docker restart backend
+```
 
 Então teremos o FrontEnd rodando em: http://localhost:3000/ e o BackEnd em:  http://localhost:8000/
 
