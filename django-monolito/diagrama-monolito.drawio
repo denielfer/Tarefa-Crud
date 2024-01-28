@@ -1,0 +1,48 @@
+<mxfile host="app.diagrams.net" modified="2024-01-28T00:53:59.804Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36 Edg/121.0.0.0" etag="cSAgHB690aqhK2M-PGSa" version="21.7.5" type="device">
+  <diagram name="Page-1" id="mEC1wjehNhwt8kY1J-iv">
+    <mxGraphModel dx="1779" dy="1238" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="SXUldga6FiN77-5fcmHl-1" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="-82" y="-39" width="471" height="368" as="geometry" />
+        </mxCell>
+        <mxCell id="SXUldga6FiN77-5fcmHl-2" value="Máquina 1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="-79" y="-69" width="89" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="SXUldga6FiN77-5fcmHl-3" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="-69" y="9.5" width="170" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="SXUldga6FiN77-5fcmHl-4" value="Monolito Django" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="-104" y="-22" width="231" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="SXUldga6FiN77-5fcmHl-5" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="184" y="8" width="194" height="273" as="geometry" />
+        </mxCell>
+        <mxCell id="SXUldga6FiN77-5fcmHl-6" value="Bando de Dados: SQLite" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="184" y="-26" width="195" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="SXUldga6FiN77-5fcmHl-7" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="-227" y="103" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="SXUldga6FiN77-5fcmHl-9" value="Request" style="endArrow=classic;startArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;entryX=0;entryY=0.459;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="SXUldga6FiN77-5fcmHl-7" target="SXUldga6FiN77-5fcmHl-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-351" y="105" as="sourcePoint" />
+            <mxPoint x="-301" y="55" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SXUldga6FiN77-5fcmHl-10" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="SXUldga6FiN77-5fcmHl-3" target="SXUldga6FiN77-5fcmHl-5">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="175" y="225" as="sourcePoint" />
+            <mxPoint x="225" y="175" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SXUldga6FiN77-5fcmHl-12" value="Acesso&lt;br&gt;a &lt;br&gt;dados" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=16;" vertex="1" connectable="0" parent="SXUldga6FiN77-5fcmHl-10">
+          <mxGeometry x="0.0145" relative="1" as="geometry">
+            <mxPoint y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

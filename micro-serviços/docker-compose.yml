@@ -15,6 +15,7 @@ services:
     networks:
       - tarefa_internal
     volumes:
+    # Descomentar linha a baixo para manter banco de dados ao finalizar Banco de dados, nescessario descomentar seção de volumes tambem
     #   - my_db:/var/lib/mysql
       - ./init_db:/docker-entrypoint-initdb.d
 

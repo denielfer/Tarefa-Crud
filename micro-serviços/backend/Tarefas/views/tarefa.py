@@ -122,12 +122,14 @@ async def create_tarefa(rbody: Schema.put_post_tarefa_schema):
     '''
     logger.info(f"POST /tarefa/")
     session = SessionLocal()
+    id = None
     try:
         print(rbody,type(rbody))
         tarefa = Tarefa(**dict(rbody))
         session.add(tarefa)
         session.flush()
         session.commit()
+        id = tarefa.id
     except exc.SQLAlchemyError as e:
         logger.debug(str(e))
         status_code = status.HTTP_400_BAD_REQUEST
@@ -140,7 +142,7 @@ async def create_tarefa(rbody: Schema.put_post_tarefa_schema):
         return JSONResponse(content=response, status_code=status_code)
     finally:
         session.close()
-    return {"msg":"Tarefa criada com sucesso"}
+    return {"msg":"Tarefa criada com sucesso",'new_tarefa_id':id}
 
 @router.put(
     path='/tarefa/{id}',

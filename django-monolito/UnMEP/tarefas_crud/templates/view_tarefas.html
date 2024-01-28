@@ -54,6 +54,6 @@
     <form method="post">
         {% csrf_token %}
         {{form}}
-        <button class="btn btn-primary" name="save" value="{{form.instance.id}}"> {% if form.instance.id %} Salvar {% else %} Editar {% endif %}</button>
+        <button class="btn btn-primary" name="save" value="{{form.instance.id}}"> {% if form.instance.id %} Editar {% else %} Salvar {% endif %}</button>
     </form>
 {% endblock %}
