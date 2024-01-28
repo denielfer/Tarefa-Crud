@@ -80,14 +80,18 @@ Então teremos o FrontEnd rodando em: http://localhost:3000/ e o BackEnd em:  ht
  - '/tarefa/{id}' : Pagina de Edição da tarefa com id={id}
 
 ### BackEnd
+
  -GET
   - '/tarefa/': Lista de todas as tarefas do banco, com todos os seus dados
   - '/tarefa/{id}': Todos os dados da tarefa com id={id}
   - '/tarefa/slice/{start}/{limit}': Lista de tarefas que começa em {start} e termina em {limit}, se existirem, das tarefas, ordenadas por criação.
+    
  -DELETE
   - '/tarefa/{id}': Deleta tarefa com id={id}
+    
  -POST
   - '/tarefa/': Cria uma nova Tarefa com dados passados no corpo da request.
+    
  -PUT
   - '/tarefa/{id}/': Altera os dados da tarefa com id={id} para os passados no corpo da request.
  
